@@ -14,6 +14,8 @@ local buying = {
 	keywords.SummonTicket;
 	keywords.StarFruit;
 }
+repeat task.wait() until workspace:FindFirstChild("travelling_merchant", true)
+task.wait(1)
 local merchant = workspace:FindFirstChild("travelling_merchant", true)
 if merchant and merchant:FindFirstChild("is_open").Value == true then
 	local items = merchant.stand.items:GetChildren()
