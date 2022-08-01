@@ -1,5 +1,5 @@
 --lockermanwxlf#2293
-local keywords {
+local keywords = {
 	StarFruit = "starfruit";
 	LuckPotion = "luckpotion";
 	SummonTicket = "summon_ticket";
