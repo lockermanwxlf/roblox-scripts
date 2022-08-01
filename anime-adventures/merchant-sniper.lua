@@ -2,7 +2,9 @@
 
 local items = {
 	StarFruit = "StarFruit";
+	StarFruitEpic = "StarFruitEpic";
 	LuckPotion = "LuckPotion";
+	SummonTicket = "summon_ticket";
 	StarRemnant = "star_remnant";
 	StrawHat = "StrawHat";
 	MagmaFruit = "MagmaFruit";
@@ -10,6 +12,9 @@ local items = {
 local buying = {
 	items.StrawHat;
 	items.MagmaFruit;
+	itmes.SummonTicket;
+	StarFruit;
+	StarFruitEpic;
 }
 local merchant = workspace:FindFirstChild("travelling_merchant", true)
 if merchant and merchant:FindFirstChild("is_open").Value == true then
