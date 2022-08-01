@@ -1,3 +1,5 @@
+--lockermanwxlf#2293
+
 local items = {
 	StarFruit = "StarFruit";
 	LuckPotion = "LuckPotion";
