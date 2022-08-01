@@ -12,9 +12,9 @@ local items = {
 local buying = {
 	items.StrawHat;
 	items.MagmaFruit;
-	itmes.SummonTicket;
-	StarFruit;
-	StarFruitEpic;
+	items.SummonTicket;
+	items.StarFruit;
+	items.StarFruitEpic;
 }
 local merchant = workspace:FindFirstChild("travelling_merchant", true)
 if merchant and merchant:FindFirstChild("is_open").Value == true then
