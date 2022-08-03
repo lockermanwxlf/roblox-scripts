@@ -1972,17 +1972,13 @@ function DiscordLib:Window(text)
 							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 							{CornerRadius = UDim.new(0, 15)}
 						):Play()
-						for _, child in pairs(v:GetChildren()) do
-							if child.Name:find("ServerWhiteFrame") then
-								child:TweenSize(
-									UDim2.new(0, 11, 0, 10),
-									Enum.EasingDirection.Out,
-									Enum.EasingStyle.Quart,
-									.3,
-									true
-								)
-							end
-						end
+						v.ServerWhiteFrame:TweenSize(
+							UDim2.new(0, 11, 0, 10),
+							Enum.EasingDirection.Out,
+							Enum.EasingStyle.Quart,
+							.3,
+							true
+						)
 						ServerWhiteFrame:TweenSize(
 							UDim2.new(0, 11, 0, 46),
 							Enum.EasingDirection.Out,
