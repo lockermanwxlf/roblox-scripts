@@ -17,7 +17,9 @@ local buying = {
 repeat task.wait() until workspace:FindFirstChild("travelling_merchant", true)
 task.wait(1)
 local merchant = workspace:FindFirstChild("travelling_merchant", true)
+repeat task.wait() until merchant:FindFirstChild("is_open", true)
 if merchant and merchant:FindFirstChild("is_open").Value == true then
+	repeat task.wait() until merchant:FindFirstChild("items", true)
 	local items = merchant.stand.items:GetChildren()
 	for i,v in pairs(items) do
 		for _, item in pairs(buying) do
