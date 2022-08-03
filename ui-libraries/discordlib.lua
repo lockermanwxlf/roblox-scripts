@@ -1958,11 +1958,15 @@ function DiscordLib:Window(text)
 							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 							{BackgroundColor3 = Color3.fromRGB(114, 137, 228)}
 						):Play()
-						TweenService:Create(
-							v.ServerCorner,
-							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{CornerRadius = UDim.new(1, 0)}
-						):Play()
+						for _, child in pairs(v:GetChildren()) do
+							if child.Name:find("ServerCorner") then
+								TweenService:Create(
+									v.ServerCorner,
+									TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+									{CornerRadius = UDim.new(1, 0)}
+								):Play()
+							end
+						end
 						TweenService:Create(
 							ServerBtnCorner,
 							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
