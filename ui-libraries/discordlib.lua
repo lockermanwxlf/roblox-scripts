@@ -3171,8 +3171,9 @@ function DiscordLib:Window(text)
 
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
 
-				return function(text)
+				return function(text, visible)
 					LabelTitle.Text = text
+					Label.Visible = not visible==false 
 				end
 			end
 
