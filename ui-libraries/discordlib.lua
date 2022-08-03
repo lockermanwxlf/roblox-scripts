@@ -1961,7 +1961,7 @@ function DiscordLib:Window(text)
 						for _, child in pairs(v:GetChildren()) do
 							if child.Name:find("ServerCorner") then
 								TweenService:Create(
-									v.ServerCorner,
+									child,
 									TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 									{CornerRadius = UDim.new(1, 0)}
 								):Play()
