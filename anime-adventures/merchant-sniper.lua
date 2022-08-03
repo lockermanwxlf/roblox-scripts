@@ -11,7 +11,7 @@ local keywords = {
 }
 
 local buying = {
-	keywords.StrawHat;
+	--keywords.StrawHat;
 	keywords.MagmaFruit;
 	keywords.SummonTicket;
 	keywords.StarFruit;
