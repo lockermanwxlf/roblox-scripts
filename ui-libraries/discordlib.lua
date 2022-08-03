@@ -2112,7 +2112,11 @@ function DiscordLib:Window(text)
 				for i, v in next, ServerChannelHolder:GetChildren() do
 					if v.ClassName == "TextButton" then
 						v.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
-						v.ChannelBtnTitle.TextColor3 = Color3.fromRGB(114, 118, 125)
+						for _, child in pairs(v:GetChildren()) do
+							if child.Name:find("ChannelBtnTitle") then
+								child.TextColor3 = Color3.fromRGB(114, 118, 125)
+							end
+						end
 					end
 					ServerFrame.Visible = true
 				end
