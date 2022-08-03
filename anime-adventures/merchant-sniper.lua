@@ -6,6 +6,8 @@ local keywords = {
 	StarRemnant = "star_remnant";
 	StrawHat = "straw";
 	MagmaFruit = "magma";
+	ShiningExtract = "extract";
+	ShiningExtract2 = "shining";
 }
 
 local buying = {
@@ -13,6 +15,8 @@ local buying = {
 	keywords.MagmaFruit;
 	keywords.SummonTicket;
 	keywords.StarFruit;
+	keywords.ShiningExtract;
+	keywords.ShiningExtract2;
 }
 repeat task.wait() until workspace:FindFirstChild("travelling_merchant", true)
 task.wait(1)
