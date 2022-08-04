@@ -14,7 +14,7 @@ local buying = {
 	--keywords.StrawHat;
 	keywords.MagmaFruit;
 	keywords.SummonTicket;
-	keywords.StarFruit;
+	--keywords.StarFruit;
 	keywords.ShiningExtract;
 	keywords.ShiningExtract2;
 }
